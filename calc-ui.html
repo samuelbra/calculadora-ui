@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="calculadora">
+        <div class="calculadora-menu">
+            <button>-</button>
+            <button>+</button>
+        </div>
+        <div class="calculadora-resultado">
+        </div>
+        <table class="calculadora-corpo">
+            <tr>
+                <td onclick="limpar()" colspan="2">c</td>
+                <td onclick="escrever('/')">÷</td>
+                <td onclick="escrever('*')">×</td>
+            </tr>
+            <tr>
+                <td onclick="escrever('7')">7</td>
+                <td onclick="escrever('8')">8</td>
+                <td onclick="escrever('9')">9</td>
+                <td onclick="escrever('+')">+</td>
+            </tr>
+            <tr>
+                <td onclick="escrever('4')">4</td>
+                <td onclick="escrever('5')">5</td>
+                <td onclick="escrever('6')">6</td>
+                <td onclick="escrever('-')">-</td>
+            </tr>
+            <tr>
+                <td onclick="escrever('1')">1</td>
+                <td onclick="escrever('2')">2</td>
+                <td onclick="escrever('3')">3</td>
+                <td onclick="calcular()" rowspan="2" class="igual">=</td>
+            </tr>
+            <tr>
+                <td onclick="escrever('0')" colspan="2" class="zero">0</td>
+                <td onclick="escrever('.')">,</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

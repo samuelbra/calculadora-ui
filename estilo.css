@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+body {
+    background-image: url(https://eskipaper.com/images/circle-background-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    font-family: sans-serif;
+}
+
+.calculadora {
+    width: 300px;
+    background-color: #242742;
+    color: white;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.calculadora .calculadora-corpo {
+    width: 100%;
+}
+
+.calculadora .calculadora-corpo td {
+    background-color: #292d4b;
+    padding: 23px;
+    text-align: center;
+}
+
+.calculadora .calculadora-corpo td:active {
+    background-color: #242742;
+    background: #242742;
+}
+
+.calculadora .calculadora-resultado {
+    padding: 0px 20px;
+    height: 150px;
+    background-image: linear-gradient(to right bottom, orange, deeppink);
+    font-size: 30pt;
+    text-align: right;
+    line-height: 150px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.calculadora .calculadora-menu {
+    padding: 5px;
+}
+
+.calculadora .calculadora-menu button {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: #292d4b;
+    color: white;
+}
+
+.igual {
+    background-image: linear-gradient(to right bottom, orange, deeppink);
+    border-bottom-right-radius: 8px;   
+}
+
+.zero {
+    border-bottom-left-radius: 8px;
+}
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
